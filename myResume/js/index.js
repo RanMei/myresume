@@ -46,6 +46,7 @@ $(function(){
         audio.src="music.mp3";
         audio.autoplay=true;
         audio.loop=true;
+        audio.play();
         $("#music").on("touchend",function() {        
             if(!this.close){            
                 audio.pause();
