@@ -16,13 +16,19 @@ $(function(){
         var indx=$(this).index();
         if(disY > 30){
             indx--;
+            if(indx==3){
+                $(".next").show();
+            }  
             if(indx<0){
                 indx=0;
             }                                                   
         }else if(disY <-30){ 
             indx++;   
-            if(indx>4){
-                return;
+             if(indx==4){
+               $(".next").hide();
+            }
+            if(indx>4){               
+                indx=4;
             }        
         } 
         swiper(indx);

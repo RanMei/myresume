@@ -128,7 +128,7 @@ ul,li{list-style:none;}
 .scene3.show .elem2 li:nth-child(even){-webkit-animation:fadeInLeft 2s 1s;}
 .scene3.show .elem2 li:nth-child(odd){-webkit-animation:fadeInR 2s 1.6s;}
 /*场景4*/
-.scene4 .elem2{margin:1.5rem 0.5rem;font-size: 0.28rem;line-height: 0.34rem;background: #fff;opacity: 0}
+.scene4 .elem2{margin:1.2rem 0.5rem;font-size: 0.28rem;line-height: 0.34rem;background: #fff;opacity: 0}
 .scene4 .elem2 li{position: relative;padding:0.4rem 0;margin:0 0.4rem;border-bottom:1px solid #999}
 .scene4 .elem2 li:last-child{border-bottom: none}
 .scene4.show .elem2{-webkit-transition:opacity 2s 1s;opacity: 1}
@@ -156,7 +156,7 @@ ul,li{list-style:none;}
     }
 }
 /*music*/
-.music{position: absolute;z-index: 100;right: 0.1rem;top: 0.1rem;width: 0.36rem;height:0.36rem;background: url(images/music.png) 0 -0.4rem;background-size: 100% auto}
+.music{position: absolute;z-index: 100;right: 0.1rem;top: 0.1rem;width: 0.56rem;height:0.56rem;background: url(images/music.png) 0 -0.62rem;background-size: 100% auto}
 .rting{-webkit-animation:music 1s linear infinite;background-position:0 0}
 @-webkit-keyframes music{
   0%{-webkit-transform:rotate(0deg);}
