@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-animation-fill-mode:both!important;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(75, 137, 220);
+    font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 0.24rem;
+}
+ul,li{list-style:none;}
+.auto-x{position: absolute;left: 0;right: 0;margin:auto;}
+.list{-webkit-transition:all 1s;}
+.list>li{
+    width:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    position: relative;
+    z-index: 0
+}
+.list .show{z-index: 100}
+/*场景1*/
+.scene1 .elem1{
+   width: 2.38rem;
+   height: 2.38rem;
+   margin:1.50rem auto;  
+   position: relative;
+}
+.scene1 .elem1 i{width:100%;height:100%;background: url(images/scene1-1.jpg) no-repeat;background-size: 100% auto}
+.scene1 .elem1 img{width:2rem;height:2rem;margin:0.18rem;border-radius: 50%}
+.scene1.show .elem1 i{-webkit-animation:ani1-1 3s linear infinite;}
+@-webkit-keyframes ani1-1{
+    0%{-webkit-transform:rotate(0);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+.scene1 h1{font-size: 0.4rem;color: #fff;text-align: center;}
+.scene1.show h1{-webkit-animation:ani1-2 1s;}
+@-webkit-keyframes ani1-2{
+    0%{-webkit-transform:translateY(2rem);opacity: 0}
+}
+/*场景2*/
+.title{position: relative;top: 0.5rem;height: 0.6rem;line-height: 0.6rem;text-align: center;}
+.title span{width: 2rem;display: inline-block;color: #000;font-size: 0.3rem;background:#fff;}
+.title i{display: block;margin:0.5rem;height: 1px;background: #fff;margin-top: 0.2rem}
+.show .title span{-webkit-animation:bounceIn 1s 0.6s;}
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+    }
+    20% {
+        -webkit-transform: scale(1.1);
+    }
+    40% {
+        -webkit-transform: scale(.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.03);
+    }
+    80% {
+        -webkit-transform: scale(.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+.show .title i{-webkit-animation:bounceInLeft 1s 0.4s;}
+@-webkit-keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px,0,0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px,0,0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px,0,0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px,0,0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+.scene2 .elem2{margin:1.8rem 0.6rem;}
+.scene2 .elem2 p{line-height: 0.6rem;font-size: 0.32rem;color: #fff}
+.scene2 .elem2 strong{display: inline-block;width: 2rem;text-align: right;margin-right: 0.6rem;font-size: 0.4rem;}
+.scene2 .elem2 span{display: inline-block;}
+.scene2.show .elem2 strong{-webkit-animation:fadeInLeft 1s 1s;}
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%,0,0);
+    }
+}
+.scene2.show .elem2 p:nth-child(2) strong{-webkit-animation-delay:1.2s;}
+.scene2.show .elem2 p:nth-child(3) strong{-webkit-animation-delay:1.4s;}
+.scene2.show .elem2 p:nth-child(4) strong{-webkit-animation-delay:1.6s;}
+.scene2.show .elem2 p:nth-child(5) strong{-webkit-animation-delay:1.8s;}
+.scene2.show .elem2 p:nth-child(6) strong{-webkit-animation-delay:2s;}
+.scene2.show .elem2 p:nth-child(7) strong{-webkit-animation-delay:2.2s;}
+.scene2.show .elem2 span{-webkit-animation:fadeInR 1s 1s;}
+@-webkit-keyframes fadeInR {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%,0,0);
+    }
+}
+.scene2.show .elem2 p:nth-child(2) span{-webkit-animation-delay:1.2s;}
+.scene2.show .elem2 p:nth-child(3) span{-webkit-animation-delay:1.4s;}
+.scene2.show .elem2 p:nth-child(4) span{-webkit-animation-delay:1.6s;}
+.scene2.show .elem2 p:nth-child(5) span{-webkit-animation-delay:1.8s;}
+.scene2.show .elem2 p:nth-child(6) span{-webkit-animation-delay:2s;}
+.scene2.show .elem2 p:nth-child(7) span{-webkit-animation-delay:2.2s;}
+/*场景3*/
+.scene3 .elem2{margin:1.5rem 0.5rem;font-size: 0.28rem;line-height: 0.34rem;}
+.scene3 .elem2 li{position: relative;padding:0 0 0.4rem 0.4rem;}
+.scene3 .elem2 li::before{content: "";position: absolute;top:0.06rem;left:0;width: 0.2rem;height: 0.2rem;border:1px solid #000;border-radius: 50%}
+.scene3.show .elem2 li:nth-child(even){-webkit-animation:fadeInLeft 2s 1s;}
+.scene3.show .elem2 li:nth-child(odd){-webkit-animation:fadeInR 2s 1.6s;}
+/*场景4*/
+.scene4 .elem2{margin:1.5rem 0.5rem;font-size: 0.28rem;line-height: 0.34rem;background: #fff;opacity: 0}
+.scene4 .elem2 li{position: relative;padding:0.4rem 0;margin:0 0.4rem;border-bottom:1px solid #999}
+.scene4 .elem2 li:last-child{border-bottom: none}
+.scene4.show .elem2{-webkit-transition:opacity 2s 1s;opacity: 1}
+.scene4.show .elem2 li{-webkit-animation:ani4-1 0.6s 1s;}
+.scene4.show .elem2 li:nth-child(2){-webkit-animation-delay:1.4s;}
+.scene4.show .elem2 li:nth-child(3){-webkit-animation-delay:1.6s;}
+.scene4.show .elem2 li:nth-child(4){-webkit-animation-delay:1.8s;}
+@-webkit-keyframes ani4-1{
+ 0%{
+    -webkit-transform: scale(2);opacity: 0
+    }
+}
+/*场景5*/
+.scene5 .elem2{margin:1.5rem 0.2rem;font-size: 0.28rem;line-height: 0.34rem;}
+.scene5 .elem2 li{position: relative;padding:0.2rem 0;}
+.scene5.show .elem2 li{-webkit-animation:ani5-1 0.6s linear 1s;}
+.scene5.show .elem2 li:nth-child(2){-webkit-animation-delay:1.5s;}
+.scene5.show .elem2 li:nth-child(3){-webkit-animation-delay:2s;}
+.scene5.show .elem2 li:nth-child(4){-webkit-animation-delay:2.5s;}
+.scene5.show .elem2 li:nth-child(5){-webkit-animation-delay:3s;}
+.scene5.show .elem2 li:nth-child(6){-webkit-animation-delay:3.5s;}
+@-webkit-keyframes ani5-1{
+ 0%{
+    -webkit-transform:translateY(-0.5rem);opacity: 0;
+    }
+}
+/*music*/
+.music{position: absolute;z-index: 100;right: 0.1rem;top: 0.1rem;width: 0.36rem;height:0.36rem;background: url(images/music.png) 0 -0.4rem;background-size: 100% auto}
+.rting{-webkit-animation:music 1s linear infinite;background-position:0 0}
+@-webkit-keyframes music{
+  0%{-webkit-transform:rotate(0deg);}
+  100%{-webkit-transform:rotate(360deg);}
+}
+/*next*/
+.next{width:0.16rem;height:0.16rem;border-right: 1px solid #fff;border-bottom: 1px solid #fff;bottom: 0;-webkit-animation:next 1s linear infinite alternate;z-index: 102}
+@-webkit-keyframes next{
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(-10px) rotate(-135deg);
+    }
+    100% {
+        opacity: 0.8;
+        -webkit-transform: translateY(-25px) rotate(-135deg);
+    }
+}
