@@ -15,7 +15,7 @@ html,body{width:100%;}
 .last_read span .getnew{ position:absolute; width:8px; height:8px; display:block; -webkit-border-radius: 4px; background:#BF3048; margin-left:43px; margin-top:-25px;}
 .last_read em { background:#BF3048; color:#fff; height:14px; line-height:16px; font-size:10px; display:inline-block; text-align:center;-webkit-border-radius: 1px; padding:0 5px; margin-right:5px;}
 .last_read a{ color:#297ACC;}
-.last_read a.l_a{white-space: nowrap;word-wrap: normal;overflow: hidden;text-overflow: ellipsis; display:block;width:78%;}
+.last_read a.l_a{white-space: nowrap;overflow: hidden;text-overflow: ellipsis; display:block;width:78%;}
 .tit-2{font-size:20px; position:relative; border-top:2px solid #4595E6; background:#fff; padding:0 14px; height:35px; line-height:35px; padding-top:3px;}
 .tit-2 a{float: right;font-size: 14px;color:#297ACC; font-weight:normal; padding-right:10px; line-height:32px;}
 .tit-2 a:after {content: ' ';position: absolute; top:14px; right:15px;width:7px;height:7px;border: #297ACC solid;border-width: 1px 1px 0 0;-webkit-transform: rotate(45deg);}
